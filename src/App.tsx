@@ -44,14 +44,18 @@ function App() {
     <div className="page-wash">
       <header className="site-header">
         <div className="container nav-inner">
-          <a className="brand" href="#top" aria-label="Careverse home">
-            <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
-            <span>careverse<span className="brand-dot">.</span></span>
-          </a>
+          <div className="header-left">
+            <a className="brand" href="#top" aria-label="Careverse home">
+              <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
+              <span>careverse<span className="brand-dot">.</span></span>
+            </a>
+            <a className="header-enterprise-link" href="https://careverse-enterprise-program.vercel.app/">Enterprise</a>
+          </div>
           <button className="mobile-menu" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
           <nav className={menuOpen ? 'main-nav open' : 'main-nav'}>
+            <a href="https://careverse-enterprise-program.vercel.app/" onClick={() => setMenuOpen(false)}>Enterprise</a>
             <a href="#why" onClick={() => setMenuOpen(false)}>Why join</a>
             <a href="#who" onClick={() => setMenuOpen(false)}>Who it’s for</a>
             <a href="#how" onClick={() => setMenuOpen(false)}>How it works</a>
