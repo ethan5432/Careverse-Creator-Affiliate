@@ -58,6 +58,8 @@ a { color: inherit; }
 .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; }
 .brand-mark img { display: block; width: 36px; height: 36px; object-fit: contain; }
 .brand-dot { color: var(--blush-strong); }
+.brand-group { display: flex; align-items: center; gap: 14px; }
+.brand-tag { font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #6a777b; white-space: nowrap; }
 .main-nav { display: flex; align-items: center; gap: 28px; font-size: 14px; font-weight: 600; color: #506066; }
 .main-nav a:not(.button) { text-decoration: none; transition: color .2s; }
 .main-nav a:not(.button):hover { color: var(--navy); }

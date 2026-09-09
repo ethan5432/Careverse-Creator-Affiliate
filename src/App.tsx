@@ -44,10 +44,13 @@ function App() {
     <div className="page-wash">
       <header className="site-header">
         <div className="container nav-inner">
-          <a className="brand" href="#top" aria-label="Careverse home">
-            <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
-            <span>careverse<span className="brand-dot">.</span></span>
-          </a>
+          <div className="brand-group">
+            <a className="brand" href="#top" aria-label="Careverse home">
+              <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
+              <span>careverse<span className="brand-dot">.</span></span>
+            </a>
+            <span className="brand-tag">Creator program</span>
+          </div>
           <button className="mobile-menu" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -56,6 +59,7 @@ function App() {
             <a href="#who" onClick={() => setMenuOpen(false)}>Who it’s for</a>
             <a href="#how" onClick={() => setMenuOpen(false)}>How it works</a>
             <a href="#faq" onClick={() => setMenuOpen(false)}>FAQ</a>
+            <a href="https://careverse-enterprise-program.vercel.app/" onClick={() => setMenuOpen(false)}>Enterprise</a>
             <a className="button button-small" href="https://careverse-creator-application.vercel.app/" onClick={() => setMenuOpen(false)}>Apply to join <ArrowRight size={16} /></a>
           </nav>
         </div>
@@ -63,8 +67,7 @@ function App() {
 
       <main id="top">
         <section className="hero">
-          <div className="hero-eyebrow-banner reveal"><span className="eyebrow-line" /> Careverse Creator Network <span className="eyebrow-line" /></div>
-          <div className="hero-copy reveal">
+    <div className="hero-copy reveal">
             <div className="hero-top">
               <h1>Earn by <span className="mark">helping people find care</span></h1>
             </div>
