@@ -129,7 +129,7 @@ function App() {
             <article className="apply-card reveal">
               <img src="/images/image copy 5.png" alt="Creator filming a care story at home" />
               <div className="apply-card-copy">
-                <span className="live-pill">Apply to the Careverse Creator Network</span>
+                <span className="live-pill">Apply to the Careverse creator network</span>
                 <h3>Make care easier to find.</h3>
                 <p>If you are active on socials and talk about health, wellness, beauty, fitness, or caregiving, we want to hear from you. Authenticity matters more than follower count.</p>
                 <a className="button apply-card-button" href="https://careverse-creator-application.vercel.app/">Apply to join <ArrowRight size={18} /></a>
