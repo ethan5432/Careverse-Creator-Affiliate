@@ -13,10 +13,10 @@ import {
 } from 'lucide-react';
 
 const creatorTypes = [
-  { title: 'Wellness & fitness', text: 'Routines, recovery, and what actually helped.', icon: HeartPulse },
-  { title: 'Beauty & skin', text: 'Care that connects to real health, not just products.', icon: Sparkles },
+  { title: 'Wellness & fitness', text: 'Tell pain from training, vet your supplements, avoid fake wellness clinics, give your doctor full context, and book aftercare when the routine isn’t enough.', icon: HeartPulse },
+  { title: 'Beauty & skin', text: 'Is it cosmetic or medical? Find the doctor, handle the procedure and aftercare, stop re-explaining every intake, and see cost before you book.', icon: Sparkles },
   { title: 'Family & caregiving', text: 'Helping parents, partners, and loved ones find their next step every day.', icon: Users },
-  { title: 'Mental health', text: 'Lived experience and honest nervous-system care.', icon: ShieldCheck },
+  { title: 'Mental health', text: 'You don’t have to guess who to call. We’ll help you find someone who fits, use what your plan covers, and book a real next step', icon: ShieldCheck },
 ];
 
 const faqs = [
@@ -44,18 +44,14 @@ function App() {
     <div className="page-wash">
       <header className="site-header">
         <div className="container nav-inner">
-          <div className="header-left">
-            <a className="brand" href="#top" aria-label="Careverse home">
-              <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
-              <span>careverse<span className="brand-dot">.</span></span>
-            </a>
-            <a className="header-enterprise-link" href="https://careverse-enterprise-program.vercel.app/">Enterprise</a>
-          </div>
+          <a className="brand" href="#top" aria-label="Careverse home">
+            <span className="brand-mark"><img src="/careverse_logo_(1).png" alt="Careverse" /></span>
+            <span>careverse<span className="brand-dot">.</span></span>
+          </a>
           <button className="mobile-menu" aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
           <nav className={menuOpen ? 'main-nav open' : 'main-nav'}>
-            <a href="https://careverse-enterprise-program.vercel.app/" onClick={() => setMenuOpen(false)}>Enterprise</a>
             <a href="#why" onClick={() => setMenuOpen(false)}>Why join</a>
             <a href="#who" onClick={() => setMenuOpen(false)}>Who it’s for</a>
             <a href="#how" onClick={() => setMenuOpen(false)}>How it works</a>
@@ -96,7 +92,6 @@ function App() {
           <div className="container trust-items">
             <span className="trust-label">Built by Care Access PBC</span>
             <span><i /> Find, compare & book trusted care</span>
-            <span><i /> HIPAA-ready, consent-based architecture</span>
             <span><i /> Human-centered. Not another supplement pitch.</span>
           </div>
         </section>
@@ -151,8 +146,6 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section className="cta-band"><div className="container cta-inner"><div><div className="eyebrow">Make care easier to find</div><h2 className="cta-steps">Step 1: Help people find care.<br />Step 2: Earn</h2><p>Early applicants get founding-creator assets.</p></div><a className="button" href="https://careverse-creator-application.vercel.app/">Apply to the Creator Network <ArrowRight size={17} /></a></div></section>
 
         <section className="section faq-section" id="faq">
           <div className="container faq-grid"><div className="faq-heading"><div className="eyebrow">The details</div><h2>Good questions deserve clear answers.</h2><p>Still curious? Reach the creator team at <a href="mailto:email@careverse.ai">email@careverse.ai</a>.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span><ChevronDown size={18} /></span></summary><p>{answer}</p></details>)}</div></div>
