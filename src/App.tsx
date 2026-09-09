@@ -69,7 +69,7 @@ function App() {
               <h1>Earn by <span className="mark">helping people find care</span></h1>
             </div>
             <div className="hero-bottom">
-              <p className="lede">Careverse helps you get the care you need. See cost and coverage in one place, book the visit and the follow-up, and keep every provider in one place so always have the context to give you the best care.</p>
+              <p className="lede">Careverse helps you get the care you need. See costs and coverage, book the visit and the follow-up, and keep every provider in one record so they have the context to provide high-quality care.</p>
               <div className="hero-actions">
                 <a className="button" href="https://careverse-creator-application.vercel.app/">Apply to join <ArrowRight size={17} /></a>
                 <a className="button btn-ghost-light" href="#how">See how it works</a>
